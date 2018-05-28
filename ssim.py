@@ -1,10 +1,13 @@
+#coding=utf-8
+#SSIM python代码，大家可以用来验证artifacts是否消除
+#结果越小，失真越严重，伪影越重
 # import the necessary packages
 from skimage.measure import compare_ssim
 import cv2
   
 # construct the argument parse and parse the arguments
-img_source="C:/Users/Administrator/Desktop/ssim/source.jpg"
-img_to_be_compare="C:/Users/Administrator/Desktop/ssim/gaijinhou.jpg"
+img_source="source.jpg"
+img_to_be_compare="gaijinhou.jpg"
  
 # load the two input images
 imageA = cv2.imread(img_source)
